@@ -1,11 +1,16 @@
 fn main(){
 
+    //input info from data sheet
     let r1:f64 = 239830.0;
-    let t1:f64 = -40.0 + 273.15;
+    let t1:f64 = -40.0;
     let r2:f64 = 10000.0;
-    let t2:f64 = 25.0 + 273.15;
+    let t2:f64 = 25.0;
     let r3:f64 = 237.98;
-    let t3:f64 = 150.0 + 273.15;
+    let t3:f64 = 150.0;
+
+    t1 = t1 + 273.15;
+    t2 = t2 + 273.15;
+    t3 = t3 + 273.15;
 
     let l1:f64 = r1.ln();
     let l2:f64 = r2.ln();
