@@ -1,5 +1,6 @@
 fn main(){
 
+    //input points from thermistor datasheet
     let r:[f64;3] = [239830.0,10000.0,237.98];
     let mut t:[f64;3] = [-40.0,25.0,150.0];
 
