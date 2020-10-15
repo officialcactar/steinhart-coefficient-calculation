@@ -1,15 +1,14 @@
 fn main(){
 
-    //input points from thermistor datasheet
+    //input three points from thermistor datasheet
     let r:[f64;3] = [239830.0,10000.0,237.98];
-    let mut t:[f64;3] = [-40.0,25.0,150.0];
+    let t:[f64;3] = [-40.0,25.0,150.0];
 
     let mut l:[f64;3] = [0.0; 3];
     let mut y:[f64;3] = [0.0; 3];
 
     for i in 0..3 {
-        t[i] += 273.15;
-        y[i] = 1.0 / t[i];
+        y[i] = 1.0 / (t[i] + 273.15);
         l[i] = r[i].ln();
     }
 
