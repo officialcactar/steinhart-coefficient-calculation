@@ -24,12 +24,12 @@ fn main() {
 
     let mut file = std::fs::File::create("data.txt").expect("create failed");
 
-    let mut i:f64 = t[0];
+    let mut i: f64 = t[0];
     while i < t[2] + 1.0 {
-        let x:f64 = (1.0 / (2.0 * c)) * (a - (1.0 / i));
-        let y:f64 = (((b/(3.0*c))).powf(3.0) + x.powf(2.0)).sqrt();
-        let r:f64 = ((y - x).cbrt() - (y + x).cbrt()).exp();
-        let print = r.round().to_string() + " " + &(&i - 273.15).to_string() + "\n";
+        let x: f64 = (1.0 / (2.0 * c)) * (a - (1.0 / i));
+        let y: f64 = ((b / (3.0 * c)).powf(3.0) + x.powf(2.0)).sqrt();
+        let r: f64 = ((y - x).cbrt() - (y + x).cbrt()).exp();
+        let print = (&i - 273.15).to_string() + " " + &r.round().to_string() + "\n";
         file.write_all(print.as_bytes()).expect("write failed");
         i += 1.0;
     }
