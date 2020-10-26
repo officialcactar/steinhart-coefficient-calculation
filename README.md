@@ -11,4 +11,4 @@ With ![alt text](https://wikimedia.org/api/rest_v1/media/math/render/svg/c1d63c9
 
 ![alt text](https://i.imgur.com/FwwOi1a.gif)
 
-![alt text](https://i.imgur.com/MtOxdsC.png)
+![alt text](https://i.imgur.com/iZWNjLl.png)
