@@ -22,7 +22,7 @@ fn main() {
 
     println!("A:{}\nB:{}\nC:{}", a, b, c);
 
-    let mut file = std::fs::File::create("data.txt").expect("create failed");
+    let mut file = std::fs::File::create("stein.txt").expect("create failed");
 
     let mut i: f64 = t[0];
     while i < t[2] + 1.0 {
